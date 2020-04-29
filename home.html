@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            overflow-x: hidden;
+        }
+
+
+        /* Top section  Navbar*/
+
+        .Topheader {
+            background-color: rgb(110, 110, 110);
+            padding: 20px;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+
+        }
+
+        #logo {
+            line-height: 25px;
+            font-size: 25px;
+            float: left;
+            color: white;
+            width: 81px;
+            position: relative;
+            left: 330px;
+
+        }
+
+        #navigation {
+            width: 400px;
+            float: right;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        #navigation ul li {
+            display: inline;
+        }
+
+        #navigation li {
+            padding: 7px;
+            display: inline-block;
+            list-style: none;
+        }
+
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #active-link {
+            color: orange;
+            background-color: rgba(172, 154, 154, 0.288);
+            height: 100%;
+            padding-top: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 22px; }
+
+
+
+            /* BannerSection */
+        .banner-img {
+            width: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding-top: 700px;
+            background: url(img/showcase.jpg);
+            background-position: center;
+            border-bottom: 2px solid white;
+            background-size: cover;
+
+
+        }
+
+
+        .bannerText {
+            text-align: center;
+            position: absolute;
+            top: 43%;
+            left: 20%;
+
+            color: white;
+        }
+
+        .heading-first-word:before {
+            color: orange;
+            content: "Enjoy ";
+        }
+
+        #About-button {
+            background-color: rgb(54, 50, 50);
+            color: white;
+            padding: 15px;
+            border: 0px;
+            border-radius: 5px;
+            outline: 0px;
+            cursor: pointer;
+        }
+
+
+        .two-box-container {
+            display: flex;
+
+            /* height: 50px; 
+    width: 100%; */
+        }
+
+
+        .Box {
+            width: 100%;
+            height: 200px;
+        }
+
+
+        #Box2 {
+
+            background-color: black;
+            text-align: center;
+            width: 100%;
+            height: 300px;
+
+
+        }
+
+
+
+
+        .Box-content {
+            color: white;
+            position: relative;
+            top: 35%;
+
+        }
+
+        .heading-first-word2:before {
+            color: orange;
+            content: "The History ";
+        }
+
+
+
+        /* Section-C */
+
+        .flex-ThreeBoxes-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 150px;
+            padding-top: 0px;
+            margin: 0px;
+        }
+
+
+        .location {
+            background-color: white;
+
+            width: 32%;
+            text-align: center;
+            align-content: center;
+            padding-top: 30px;
+
+        }
+
+
+        .free-meals {
+            background-color: burlywood;
+
+            width: 32%;
+            text-align: center;
+            align-content: center;
+            padding-top: 30px;
+
+
+
+        }
+
+
+        .fitness-room {
+            background-color: white;
+
+            width: 35%;
+            text-align: center;
+            align-content: center;
+            padding-top: 30px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section A TOP HEADER -->
+    <section id="home">
+        <section id="navigation-bar">
+            <div class="Topheader">
+                <h3 id="logo">HTB</h3>
+                <nav id="navigation">
+                    <ul>
+                        <li><a href="home.html" target="_blank" id="active-link">Home</a></li>
+                        <li><a href="about.html" target="_blank">About</a></li>
+                        <li><a href="contact.html" target="_blank">Contact</a></li>
+
+
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+
+        <!-- SECTION B BANNER -->
+        <section id="banner">
+
+            <div class="banner-img">
+                <div class="bannerText">
+                    <h1 class="heading-first-word" style="font-size: 55px;">Your Stay</h1>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        sapiente aperiam debitis nostrum ut sunt facere recusandae?!</p>
+                    <br>
+                    <button id="About-button"><a style="color: white; text-decoration: none;" href="#about"> About Our
+                            Hotel</a></button>
+                </div>
+
+                <div class="two-box-container">
+
+                    <div class="Box" id="Box1">
+                        <img src="img/photo-1.jpg" alt="" srcset="" width="100%" height="300px">
+                    </div>
+                    <div class="Box" id="Box2">
+
+                        <div class="Box-content">
+                            <h2 style="font-weight: bold;" class="heading-first-word2">Of Hotel</h2>
+                            <br>
+                            <p style="color: white; padding:10px; width: 700px;">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Quos facilis rerum animi
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <br>
+                            <button style="background-color: white; color: black; border-radius: 8px; 
+                 padding:10px; cursor: pointer;">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </section>
+
+
+
+
+    <!-- SECTION C SERVICES -->
+    <section id="services">
+
+        <div class="flex-ThreeBoxes-container">
+            <div class="location">
+
+                <i><img src="locationicon.PNG" alt="" srcset=""></i>
+                <br>
+                <h3>Great location</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet
+                    consectetur adipisicing.</p>
+            </div>
+            <div class="free-meals">
+
+                <i><img src="spoonicon.PNG" alt="" srcset=""></i>
+                <br>
+                <h3>Free Meals</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet
+                    consectetur adipisicing.</p>
+            </div>
+            <div class="fitness-room">
+
+                <i><img src="fitnessicon.PNG" alt="" srcset=""></i>
+                <br>
+                <h3>Fitness Room</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet
+                    consectetur adipisicing.</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
